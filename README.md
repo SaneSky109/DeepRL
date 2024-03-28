@@ -1,4 +1,4 @@
-# Deep Learning Project: Asteroid Clone Agent
+# Deep Q-Learning Project: Asteroid Clone Agent
 
 This repository hosts an Asteroids game clone powered by a Deep Q-Learning Network (DQN) agent, created using Python, Pygame, and TensorFlow. The project aims to demonstrate the application of deep reinforcement learning in controlling the player's spacecraft to avoid and destroy asteroids.
 
