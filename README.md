@@ -36,18 +36,6 @@ The project's modular design allows for various enhancements and experimentation
 
 
 
-## Customization and Improvement
-* **Network Architecture:** Modify the DQN's neural network architecture in DQNAgent._build_model to experiment with different layer configurations and regularization techniques.
-**Reward System:** Adjust the reward logic in Game.get_reward to incentivize or penalize different behaviors.
-**Hyperparameters:** Experiment with different settings for learning rate, epsilon decay, replay buffer size, and batch size to optimize learning.
-
-
-
-
-
-
-
-
 
 
 
