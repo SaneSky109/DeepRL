@@ -11,3 +11,13 @@ The game environment is built using Pygame, where the player controls a spaceshi
 * **Reinforcement Learning:** Implements reinforcement learning principles, including exploration vs. exploitation, through an epsilon-greedy strategy.
 * **Replay Buffer:** Improves learning efficiency and stability by storing and replaying past experiences.
 * **Target Network:** Enhances training stability by using a separate target network.
+
+## Setup
+
+To run this project, ensure you have Python 3.10 installed along with the required libraries: Pygame for the game environment and TensorFlow for the DQN agent.
+
+1. Install dependencies
+
+```python
+pip install pygame tensorflow
+```
