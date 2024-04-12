@@ -7,10 +7,10 @@ Welcome to the GitHub repository of my Asteroids Game Clone project, where I exp
 ## Project Overview
 The project simulates the Asteroids game, challenging the player's spacecraft to avoid and destroy asteroids. The game environment, constructed using Pygame, features dynamic asteroid generation, player movement (forward thrust and rotation), shooting mechanics, and collision detection.
 
-The heart of our project is the DQN agent, developed with TensorFlow. This agent learns to make decisions (move forward, rotate, shoot) based on the current game state, aiming to maximize its survival time and score by avoiding asteroids and shooting them down.
+The heart of the project is the DQN agent, developed with TensorFlow. This agent learns to make decisions (move forward, rotate, shoot) based on the current game state, aiming to maximize its survival time and score by avoiding asteroids and shooting them down.
 
 ## Game Environment 
-The Game class encapsulates the game environment. It initializes the game window, handles game logic (e.g., spawning asteroids, updating game objects, detecting collisions), and renders the game state to the screen. This class provides a realistic and challenging setting for training our DQN agent, with features including:
+The Game class encapsulates the game environment. It initializes the game window, handles game logic (e.g., spawning asteroids, updating game objects, detecting collisions), and renders the game state to the screen. This class provides a realistic and challenging setting for training the DQN agent, with features including:
 
 * Dynamic asteroid spawning and movement
 * Player spaceship control (acceleration and rotation)
@@ -21,18 +21,20 @@ The Game class encapsulates the game environment. It initializes the game window
 ## DQN Agent
 The DQNAgent class represents the reinforcement learning agent. It uses a neural network to approximate the Q-function, mapping state-action pairs to expected rewards. The agent learns an optimal policy over time through exploration (selecting random actions) and exploitation (choosing actions based on learned Q-values), balancing these strategies using an epsilon-greedy approach. Key aspects include:
 
-* Neural network architecture with dense layers and dropout for generalization
-* Experience replay mechanism for efficient learning from past actions
-* Target network for stable Q-value approximation
-* Epsilon decay strategy for gradual shift from exploration to exploitation
+* A neural network architecture with dense layers enhanced by L2 regularization to improve generalization
+* An experience replay system that enables efficient learning from previous actions by storing and reusing past experiences.
+* A target network that provides a stable foundation for Q-value predictions, mitigating fluctuations during learning.
+* An epsilon decay approach that gradually transitions the agent from exploration to more focused exploitation as it gains experience.
 
 ## Training and Evaluation
-Training involves running the game environment in episodes, where the agent interacts with the environment, makes decisions, and learns from the outcomes. Each episode's total reward and score provide insight into the agent's performance and learning progress. The training loop includes:
+Training involves running the game environment across multiple episodes. During each episode, the agent interacts with the environment, makes decisions based on its current state, and learns from the results. The cumulative reward and score from each episode offer insights into the agent's performance and learning advancements. Key steps in the training loop include:
 
-* Resetting the environment at the start of each episode
-* Selecting actions based on the current state using the DQN agent
+* Resetting the environment at the beginning of each episode to ensure a fresh start.
+* Using the DQN agent to select actions according to the current state of the game.
 * Updating the game state and receiving rewards based on the agent's actions
-* Saving the trained model periodically and upon achieving high scores
+* Periodically saving the model and explicitly saving upon reaching high scores to capture improved policies.
+
+Evaluation follows the training phase to assess the effectiveness of the learned policies without further training. This is achieved by running the agent through several episodes while keeping the exploration rate (epsilon) at a minimal level, ensuring that the agent predominantly uses learned behaviors. The focus during evaluation is to measure the agent’s performance in terms of consistency, decision-making quality, and ability to handle different scenarios in the game environment. These evaluations help identify areas where the model excels and where it may need further training or adjustments.
 
 ## Future Enhancements
 This project lays the groundwork for further exploration and experimentation in reinforcement learning. Potential improvements include:
