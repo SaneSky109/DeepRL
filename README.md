@@ -68,7 +68,7 @@ Before proceeding, ensure you have a pretrained model file (.h5 format) availabl
 
 
 ## Acknowledgments
-This project is inspired by the classic Atari Asteroids game and the wealth of research in the field of reinforcement learning. We are grateful to the open-source community for providing the tools and libraries that made this project possible.
+This project is inspired by the classic Atari Asteroids game and the wealth of research in the field of reinforcement learning. I am grateful to the open-source community for providing the tools and libraries that made this project possible.
 
 Happy learning and exploring!
 
