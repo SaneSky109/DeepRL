@@ -39,9 +39,9 @@ Evaluation follows the training phase to assess the effectiveness of the learned
 ## Future Enhancements
 This project lays the groundwork for further exploration and experimentation in reinforcement learning. Potential improvements include:
 
-Experimenting with different neural network architectures and hyperparameters
-Implementing advanced RL algorithms (e.g., Double DQN, Dueling DQN)
-Enhancing the game environment for more complex scenarios and learning challenges
+* Experimenting with different neural network architectures and hyperparameters
+* Implementing advanced RL algorithms (e.g., Double DQN, Dueling DQN)
+* Expanding the agent state to include more detailed information of the environment
 
 Contributions, suggestions, and discussions on extending and improving the project are welcome.
 
