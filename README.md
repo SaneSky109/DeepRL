@@ -2,7 +2,7 @@
 
 Welcome to the GitHub repository of my Asteroids Game Clone project, where I explore the fascinating world of reinforcement learning (RL) by training a Deep Q-Network (DQN) agent to navigate and survive in a custom-built environment simulating the classic Asteroids arcade game. This project is crafted with Python, leveraging the Pygame library for game development and TensorFlow for implementing the DQN agent.
 
-![DQN Agent after 1500 Episodes](Images/DQNAgent_gameplay.gif)
+![Best DQN Agent after 5000 Episodes](Images/DQNAgent_gameplay.gif)
 
 ## Project Overview
 The project simulates the Asteroids game, challenging the player's spacecraft to avoid and destroy asteroids. The game environment, constructed using Pygame, features dynamic asteroid generation, player movement (forward thrust and rotation), shooting mechanics, and collision detection.
