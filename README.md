@@ -45,28 +45,6 @@ This project lays the groundwork for further exploration and experimentation in 
 
 Contributions, suggestions, and discussions on extending and improving the project are welcome.
 
-
-
-
-
-
-
-
-
-
-
-
-## Getting Started
-
-### Running the Agent with a Pretrained Model
-To demonstrate the capabilities of our trained DQN agent without going through the entire training process, you can run the agent using a pretrained model. This section guides you through the steps to load a pretrained model and watch the agent play the game.
-
-#### Prerequisites
-Before proceeding, ensure you have a pretrained model file (.h5 format) available. This file contains the weights of the neural network that the agent uses to make decisions. If you have followed the training steps outlined in this project, you should have this file saved in the designated directory folder called 'Model_Files'.
-
-#### Steps to Run the Agent
-
-
 ## Acknowledgments
 This project is inspired by the classic Atari Asteroids game and the wealth of research in the field of reinforcement learning. I am grateful to the open-source community for providing the tools and libraries that made this project possible.
 
