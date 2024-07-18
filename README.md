@@ -49,35 +49,3 @@ Contributions, suggestions, and discussions on extending and improving the proje
 This project is inspired by the classic Atari Asteroids game and the wealth of research in the field of reinforcement learning. I am grateful to the open-source community for providing the tools and libraries that made this project possible.
 
 Happy learning and exploring!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Setup
-
-To run this project, ensure you have Python 3.10 installed along with the required libraries: Pygame for the game environment and TensorFlow for the DQN agent.
-
-1. Install dependencies
-
-```python
-pip install pygame tensorflow
-```
-
-2. Clone the repository to your local machine.
-
-3. Open '' and change file path to where the .h5 file is saved
